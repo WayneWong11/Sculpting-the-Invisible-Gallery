@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Sculpting the Invisible 现场声音生成雕塑的公开作品相册与 4K 壁纸领取页面。">
+    <title>生成式雕塑库 | Sculpting the Invisible</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <header class="site-header">
+      <a class="wordmark" href="#/" aria-label="返回生成式雕塑库首页">
+        <span>Sculpting</span>
+        <span>the Invisible</span>
+      </a>
+      <nav aria-label="主要导航">
+        <a href="#gallery">作品相册</a>
+        <a href="#about">项目说明</a>
+      </nav>
+      <p class="header-index">CMAA5016<br>2026</p>
+    </header>
+
+    <main id="main-content">
+      <div data-gallery-view>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-title">
+            <p class="eyebrow">公开声音雕塑档案</p>
+            <h1 id="page-title">声音留下<br>可以观看的形体</h1>
+          </div>
+          <p class="hero-intro">现场的正常说话、笑声与拍手共同塑造一件实时雕塑。每轮完成的作品按生成时间保存于此，并提供电脑与手机 4K 壁纸。</p>
+        </section>
+
+        <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">最新在前</p>
+              <h2 id="gallery-title">作品相册</h2>
+            </div>
+            <p class="gallery-status" data-gallery-status aria-live="polite">正在读取作品…</p>
+          </div>
+          <div class="gallery-grid" data-gallery-grid aria-live="polite" aria-busy="true"></div>
+          <div class="gallery-message" data-gallery-message hidden></div>
+          <button class="load-more" type="button" data-load-more hidden>加载更多作品</button>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+          <div>
+            <p class="eyebrow">关于作品</p>
+            <h2 id="about-title">一件雕塑，<br>两个人也可以共同完成。</h2>
+          </div>
+          <div class="about-copy">
+            <p>作品只根据声音类别与实际音频特征生成，不识别说话内容，也不保存现场录音或参与者身份。</p>
+            <dl>
+              <div><dt>电脑壁纸</dt><dd>3840 × 2160 PNG</dd></div>
+              <div><dt>手机壁纸</dt><dd>2160 × 3840 PNG</dd></div>
+              <div><dt>时间</dt><dd>中国标准时间 UTC+8</dd></div>
+            </dl>
+          </div>
+        </section>
+      </div>
+
+      <section class="artwork-view" data-artwork-view hidden aria-labelledby="artwork-title">
+        <a class="back-link" href="#/">返回作品相册</a>
+        <div class="artwork-loading" data-artwork-loading aria-live="polite">正在读取作品…</div>
+        <div data-artwork-content hidden>
+          <header class="artwork-heading">
+            <div>
+              <p class="eyebrow">声音雕塑作品</p>
+              <h1 id="artwork-title">你的声音<br>留下了形体</h1>
+            </div>
+            <dl class="artwork-meta">
+              <div><dt>生成时间</dt><dd data-artwork-time></dd></div>
+              <div><dt>作品编号</dt><dd data-artwork-id></dd></div>
+            </dl>
+          </header>
+          <figure class="artwork-figure">
+            <img data-artwork-image alt="黑色背景上的声音生成雕塑">
+            <figcaption>Sculpting the Invisible · 实时声音交互作品</figcaption>
+          </figure>
+          <div class="downloads" aria-label="4K 壁纸下载">
+            <a class="download-link" data-desktop-download download>
+              <span>电脑壁纸</span><strong>3840 × 2160</strong><small>下载 4K PNG</small>
+            </a>
+            <a class="download-link" data-mobile-download download>
+              <span>手机壁纸</span><strong>2160 × 3840</strong><small>下载 4K 竖屏 PNG</small>
+            </a>
+          </div>
+          <p class="privacy-note">本页面只公开最终雕塑图像与生成时间，不保存录音、说话内容或参与者身份。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>由现场声音共同生成的实时雕塑作品档案。</p>
+      <p>HKUST(GZ) · CMAA5016</p>
+    </footer>
+    <noscript><p class="noscript">需要启用 JavaScript 才能读取公开作品相册。</p></noscript>
+  </body>
+</html>
