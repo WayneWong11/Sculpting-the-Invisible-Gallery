@@ -1,4 +1,4 @@
-import{c as A,I as p}from"./index-CHpMmSkl.js";function M(w){var T;document.body.classList.add("model-check-page"),w.innerHTML=`<main class="model-check">
+import{c as A,I as p}from"./index-DjAxbPpM.js";function M(w){var T;document.body.classList.add("model-check-page"),w.innerHTML=`<main class="model-check">
     <p class="model-check-kicker">TEACHABLE MACHINE · 原始输出对照</p>
     <h1>先确认模型听到了什么</h1>
     <p>直接显示你上传模型的分类结果，不经过雕塑的音量门槛、连续确认或冷却规则，也不生成形状。</p>
